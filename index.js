@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(methodOverride("_method"));
 
 // Serve the Angular/Ionic app
-app.use(express.static('../conference/www'));
+app.use(express.static('../todo-x-ionic/www'));
 
 // Routes
 app.use('/',indexRoutes);
