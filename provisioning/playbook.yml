@@ -1,0 +1,38 @@
+---
+- hosts: all
+
+  sudo: True
+
+  vars_files:
+    - vars/apt.yml
+    - vars/nginx.yml
+    - vars/nodejs.yml
+    - vars/pgsql.yml
+    - vars/users.yml
+    - vars/htpasswd.yml
+    - vars/redis.yml
+
+  roles:
+    - role: kosssi.apt
+      tag: apt
+
+    - role: ANXS.generic-users
+      tag: users
+
+    - role: jdauphant.nginx
+      tag: nginx
+
+    - role: ANXS.nodejs
+      tag: nodejs
+
+    - role: ANXS.postgresql
+      tag: postgresql
+
+    - role: ANXS.build-essential
+      tag: buildessential
+
+    - role: franklinkim.htpasswd
+      tag: htpasswd
+
+    - role: DavidWittman.redis
+      tag: Redis
