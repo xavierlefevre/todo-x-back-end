@@ -3,7 +3,7 @@ var Sequelize = require('sequelize');
 // Connect to local postgresql database
 var sequelize = new Sequelize('Xavier', 'Xavier', null, {
       dialect: 'postgres',
-      port:    5432,
+      port: 5432,
     });
 
 // Verify connection successfull

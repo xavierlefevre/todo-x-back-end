@@ -9,11 +9,11 @@ Vagrant.configure('2') do |config|
   config.vm.hostname = $HOSTNAME
   config.vm.box = $BOX
   config.vm.network :private_network, ip: $IP
-  config.vm.network :forwarded_port, guest: 80, host: 8080
+  config.vm.network :forwarded_port, guest: 80, host: 5000
 
   config.ssh.forward_agent = true
 
-  config.vm.synced_folder '../', '/home/xavier/www', type: 'nfs'
+  config.vm.synced_folder '../', '/home/Xavier/www', type: 'nfs'
 
   config.vm.provider 'virtualbox' do |v|
     v.name = 'xavier-backend'

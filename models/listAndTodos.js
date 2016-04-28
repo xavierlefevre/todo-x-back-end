@@ -1,3 +1,5 @@
+var config = require('../config/config');
+
 module.exports = (sequelize, DataTypes) => {
 
   // Defining lists model
@@ -32,7 +34,9 @@ module.exports = (sequelize, DataTypes) => {
 
   // Feed first data if creating brand new database: uncomment bellow to FEED
   // ----
-  require('./data/listsAndTodos')(List, Todo);
+  // if(config.env == 'vagrant'){
+  //   require('./data/listsAndTodos')(List, Todo);
+  // }
   // ----
 
     return {
