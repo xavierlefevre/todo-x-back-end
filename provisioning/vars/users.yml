@@ -1,0 +1,6 @@
+genericusers_users:
+  - name: "Xavier"
+    groups: []
+    pass: "xavier"
+    ssh_keys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC4SogMRe7BS6i82awIiy4w7q+GXUc+X0th+stlwtV3NfbL21Vn6fo6nl7aii9zMxey+dLHM6Otab6kx0Gvo+TGSCSAHxhSzMzTdhg2Z+4hgbmZiOIxkaE/k9LVbm1KndvMPt477e1f6vT3Oy9GI5p6RqbwMQEj2+aSqzKym74zwwsx+j2LdaP83Umh285ThUbMxJkAo2A+pLZtnVcLWPWtLshZxDfZyCyjMlvLkCbfK2kJ5zNED9rmCp/9V7k0/evKF1WyLxJouvPgy4GJS9qm/o4HJX6TDRAAg0BD/CjQaZ3YCdrtbf97L+nl7zHk7WZZ2Yvra5w/rPMggwRCgM4b Xavier@Xavier-Macbook.local"

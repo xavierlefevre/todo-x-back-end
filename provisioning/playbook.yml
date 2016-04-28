@@ -5,12 +5,10 @@
 
   vars_files:
     - vars/apt.yml
+    - vars/users.yml
     - vars/nginx.yml
     - vars/nodejs.yml
-    - vars/pgsql.yml
-    - vars/users.yml
-    - vars/htpasswd.yml
-    - vars/redis.yml
+    - vars/postgresql.yml
 
   roles:
     - role: kosssi.apt
@@ -28,11 +26,9 @@
     - role: ANXS.postgresql
       tag: postgresql
 
-    - role: ANXS.build-essential
-      tag: buildessential
+  tasks:
+    - name: set locale LC_ALL
+      lineinfile: dest=/etc/default/locale line="LC_ALL=en_US.UTF-8"
 
-    - role: franklinkim.htpasswd
-      tag: htpasswd
-
-    - role: DavidWittman.redis
-      tag: Redis
+    - name: set locale LANGUAGE
+      lineinfile: dest=/etc/default/locale line="LANGUAGE=en_US:en"

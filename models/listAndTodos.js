@@ -32,7 +32,7 @@ module.exports = (sequelize, DataTypes) => {
 
   // Feed first data if creating brand new database: uncomment bellow to FEED
   // ----
-  // require('./data/listsAndTodos')(List, Todo);
+  require('./data/listsAndTodos')(List, Todo);
   // ----
 
     return {

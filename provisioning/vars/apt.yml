@@ -1,0 +1,4 @@
+apt_update: true
+apt_upgrade: true
+apt_install:
+  - git
